@@ -15,3 +15,10 @@ The idea behind a residual block is that you have your input x go through conv-r
 Another reason for why this residual block might be effective is that during the backward pass of backpropagation, the gradient will flow easily through the graph because we have addition operations, which distributes the gradient.
 
 <img align="left" img src="./images/resnet50_2.png" width="400" height="700"> <img align="right" img src="./images/resnet50_1.png" width="500"  height="600">
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+### Reference
+1. https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf
+2. https://adeshpande3.github.io/The-9-Deep-Learning-Papers-You-Need-To-Know-About.html
+3. https://towardsdatascience.com/hitchhikers-guide-to-residual-networks-resnet-in-keras-385ec01ec8ff
