@@ -9,6 +9,9 @@ ResNet was proposed by Microsoft in 2015 in the ILSVRC. Multiple ResNet architec
 #### Residual Block
 The idea behind a residual block is that you have your input x go through conv-relu-conv series. This will give you some F(x). That result is then added to the original input x. Let’s call that H(x) = F(x) + x. In traditional CNNs, your H(x) would just be equal to F(x) right? So, instead of just computing that transformation (straight from x to F(x)), we’re computing the term that you have to add, F(x), to your input, x. Basically, the mini module shown below is computing a “delta” or a slight change to the original input x to get a slightly altered representation (When we think of traditional CNNs, we go from x to F(x) which is a completely new representation that doesn’t keep any information about the original x). The authors believe that “it is easier to optimize the residual mapping than to optimize the original, unreferenced mapping”.
 
+<p align="center"><img src="./images/resnet50_3.png" width="400"> </p>
+
+
 Another reason for why this residual block might be effective is that during the backward pass of backpropagation, the gradient will flow easily through the graph because we have addition operations, which distributes the gradient.
 
-
+<img align="left" img src="./images/resnet50_2.png" width="400" height="700"> <img align="right" img src="./images/resnet50_1.png" width="500"  height="600">
